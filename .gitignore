@@ -1,7 +1,8 @@
 .DS_Store
 node_modules
 /dist
-!.VSCodeCounter/results.md
+.VSCodeCounter/*
+!.VSCodeCounter/**/results.md
 build
 
 # local env files
