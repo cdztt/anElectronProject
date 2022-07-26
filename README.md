@@ -4,4 +4,4 @@
 
 * 还提供了一个局域网http服务器的功能，当电脑和平板在同一个WiFi网络时，可以将平板里的文件传输到电脑里。
 
-* 这个程序就是将一些功能性脚本封装进一个桌面客户端。
+* 这个程序就是将一些功能性脚本封装进一个[桌面客户端](https://github.com/enoughtallisymcrift/anElectronProject/wiki)。
