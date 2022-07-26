@@ -4,7 +4,7 @@ import xlsx from 'xlsx'
 export default class {
 	constructor(paths, fieldsNum, targetPath) {
 		this.paths = paths
-	    this.fieldsNum = fieldsNum
+        this.fieldsNum = fieldsNum
 		this.targetPath = targetPath
 		this.personID = '个人识别码'
 	}
