@@ -1,24 +1,3 @@
 # hy-fitness-data
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+这是一个electron桌面程序，主要用来处理excel表格，如导入人员名单，对名单进行分组，对成绩进行处理等。还提供了一个局域网http服务器的功能，当电脑和平板在同一个WiFi网络时，可以将平板里的文件传输到电脑里。这个程序就是将一些功能性脚本封装进一个桌面客户端。
