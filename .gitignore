@@ -2,7 +2,9 @@
 node_modules
 /dist
 .VSCodeCounter/*
-!.VSCodeCounter/**/results.md
+!.VSCodeCounter/2022*
+.VSCodeCounter/2022*/*
+!.VSCodeCounter/2022*/results.md
 build
 
 # local env files
