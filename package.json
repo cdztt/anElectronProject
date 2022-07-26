@@ -1,17 +1,29 @@
 {
-  "name": "hy-fitness-data",
+  "name": "hy",
   "version": "0.1.0",
   "private": true,
+  "author": "chendan",
+  "description": "for hy fitness data",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps",
+    "electron:generate-icons": "electron-icon-builder --input=./public/icon.png --output=build --flatten"
   },
+  "main": "background.js",
   "dependencies": {
     "core-js": "^3.6.5",
+    "dexie": "^3.0.3",
+    "element-ui": "^2.14.1",
+    "formidable": "^1.2.2",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
-    "vuex": "^3.4.0"
+    "vuex": "^3.4.0",
+    "xlsx": "^0.16.9"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -20,10 +32,15 @@
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
+    "babel-plugin-component": "^1.1.1",
+    "electron": "^9.0.0",
+    "electron-devtools-installer": "^3.1.0",
+    "electron-icon-builder": "^1.0.2",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
+    "vue-cli-plugin-electron-builder": "~2.0.0-rc.5",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -44,5 +61,16 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "babel": {
+    "plugins": [
+      [
+        "component",
+        {
+          "libraryName": "element-ui",
+          "styleLibraryName": "theme-chalk"
+        }
+      ]
+    ]
+  }
 }
